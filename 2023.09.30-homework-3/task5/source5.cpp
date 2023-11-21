@@ -30,4 +30,5 @@ int main(int argc, char* argv[])
 	}
 	std::cout << ans;
 	return EXIT_SUCCESS;
+
 }
