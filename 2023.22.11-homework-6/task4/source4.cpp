@@ -5,7 +5,7 @@ void moves_record(int n, int from, int to)
 	printf("%d %d %d\n", n, from, to);
 }
 
-void hanoi(int n, int from, int to) 
+void hanoi(int n, int from, int to)
 {
 
 	if (n > 0)
@@ -13,8 +13,8 @@ void hanoi(int n, int from, int to)
 		int res = 6 - from - to;
 		if (n == 1)
 		{
-			moves_record(n, from, to); 
-			
+			moves_record(n, from, to);
+
 		}
 		else
 		{
@@ -23,9 +23,9 @@ void hanoi(int n, int from, int to)
 			hanoi(n - 1, to, from);
 			moves_record(n, res, to);
 			hanoi(n - 1, from, to);
-			
+
 		}
-		
+
 	}
 
 	else
